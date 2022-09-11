@@ -1,0 +1,323 @@
+:root {
+
+            --primary-text-color: #757575;
+            --title-text-color: #212121;
+            --accent-color: #2196F3;
+            --white-color: #FFFFFF;
+}
+
+body{
+    color: var(--primary-text-color);
+    background-color: var(--white-color);
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    padding: 5px;
+}
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+section.whatwedo {
+    padding-top: 0px;
+}
+section.hero {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+/*                                                  HEADER SECTION */
+.header-wrap {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+}
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+.header-navigation .logo-header {
+    margin-right: 93px;
+}
+.header-description {
+    display: flex;
+}
+.header-description .header-item + .header-item {
+    margin-left: 50px;
+}
+.header-contact {
+    display: flex;
+    margin-left: auto;
+}
+.header-contact :not(:last-child) {
+    margin-right: 50px;
+}
+.logo-header, .logo-footer{
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+}
+
+:current(.link-curent) {
+    color: var(--accent-color);
+}
+.link-curent{
+    color: var(--accent-color);
+}
+.logo-web {
+    color: var(--accent-color);
+}
+.logo-studio {
+    color: var(--title-text-color);
+}
+.header-description {
+    list-style-type: none;
+    font-weight: 500;
+}
+.header-description :hover {
+    color: var(--accent-color);
+}
+.header-item {
+    letter-spacing: 0.02em;;
+}
+.header-link {
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+.header-contact {
+    list-style-type: none;
+        font-weight: 500;
+}
+.header-contact :hover {
+    color: var(--accent-color);
+}
+.contact-link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+}
+/*                                       FOOTER*/
+.footer {
+    background-color: #2F303A;
+    height: 252px;
+    width: 1600px;
+}
+.footer-wrap {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+.logo-footer {
+    padding-left: 0px;
+}
+.logo-footer-studio {
+    color: var(--white-color);
+}
+.footer-descraption {
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 0px;
+}
+.contact {
+    padding-top: 20px;
+}
+
+.footer-link {
+    color: var(--primary-text-color);
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-item {
+    padding-bottom: 9px;
+}
+.footer-descraption :last-child {
+    padding-bottom: 0px;
+}
+.footer-item :hover {
+    color: var(--accent-color);
+}
+.adress-footer {
+    color: var(--white-color);
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!STUDIO PAGE!!!!!!!!!!!!!!!!!!!!!*/
+/*                                      HERO SECTION                 */
+.hero{
+    background-color: #2F303A;
+    text-align: center;
+    height: 600px;
+    width: 1600px;
+    left: 0px;
+    top: 80px;
+}
+.hero-titel {
+    color: var(--white-color);
+    font-weight: 900;
+    font-size: 44px;
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 200px;
+    position: absolute;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.hero-button {
+    position: absolute;
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 360px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-style: hidden;
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    
+}
+/*                    ABOUT US SECTION                    */
+.aboutus {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.about-desription, .typeofproduct-item, .whatwedo-list, .ourteam-list {
+    list-style-type: none;
+}
+.about-desription {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+.about-desription :not(:last-child) {
+    margin-right: 30px;
+}
+.about-desription :last-child {
+    margin-left: auto;
+}
+.about-list {
+    width: 270px;
+    margin: 0px;
+}
+.about-titel {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.about-paragraph {
+    margin: 0px;
+}
+.whatwedo {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.whatwedo-description {
+    display: flex;
+    padding-left: 0px;
+}
+.whatwedo-list + .whatwedo-list {
+    margin-left: 30px;
+}
+
+.ourteam {
+    background-color: #F5F4FA;;
+}
+.ourteam-container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ourteam-descraption {
+    display: flex;
+    margin: 0px;
+    padding-left: 0px;
+}
+.ourteam-wrap-item {
+    width: 270px;
+    background-color: var(--white-color);
+    margin-right: 30px;
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.ourteam-img {
+    display: block;
+    padding-bottom: 30px;
+}
+.ourteam-titel, .whatwedo-titel {
+    font-weight: 700;
+    font-size: 36px;
+    margin: 0px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.ourteam-name {
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 10px;
+    margin: 0px;
+}
+.ourteam-paragraph {
+    font-size: 16px;
+    margin: 0px;
+    padding-bottom: 30px;
+}
+.about-titel, .whatwedo-titel, .typeofproduct-item,.exampleofproduct-titel, .ourteam-titel, .ourteam-name {
+    color: var(--title-text-color);
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!! PORTFOLIO PAGE!!!!!!!!!!*/
+/*                                                TYPE OF PRODUCT SECTION*/
+.typeofproduct-item :hover {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+.typeofproduct-button {
+    font-family: Roboto;
+    background: #F5F4FA;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    border-style: hidden;
+    line-height: 1.59;
+    letter-spacing: 0.03em;
+}
+/*                                         EXAMPLES OF PRODUCT SECTION*/
+.exampleofproduct-descraption {
+    list-style-type: none;
+}
+.exampleofproduct-titel{
+font-size: 18px;
+font-weight: 700;
+letter-spacing: 0.06em;
+}
+.exampleofproduct-paragraph {
+    font-size: 16px;
+}
