@@ -186,23 +186,26 @@ section.hero {
     top: 80px;
 }
 .hero-titel {
+    display: block;
+    width: 696px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 200px;
+    padding-right: 452px;
+    padding-bottom: 30px;
+    padding-left: 452px;
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
-    width: 696px;
-    height: 120px;
-    left: 452px;
-    top: 200px;
-    position: absolute;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 .hero-button {
-    position: absolute;
-    width: 216px;
+width: 216px;
     height: 50px;
     left: 692px;
-    top: 360px;
+    top: 430px;
+    background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border-style: hidden;
