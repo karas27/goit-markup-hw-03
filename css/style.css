@@ -88,7 +88,6 @@ section.hero {
     text-decoration: none;
     font-family: Raleway, sans-serif;
 }
-
 :current(.link-curent) {
     color: var(--accent-color);
 }
@@ -188,6 +187,9 @@ section.hero {
 .footer-item :focus {
     color: var(--accent-color);
 }
+.adress-footer :focus {
+    color: var(--accent-color);
+}
 .adress-footer {
     color: var(--white-color);
 }
@@ -220,7 +222,6 @@ width: 216px;
     height: 50px;
     left: 692px;
     top: 430px;
-    background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border-style: hidden;
@@ -231,7 +232,6 @@ width: 216px;
     color: var(--white-color);
     background-color: var(--accent-color);
     cursor: pointer;
-    
 }
 /*                    ABOUT US SECTION                    */
 .aboutus {
@@ -363,6 +363,11 @@ width: 216px;
     background-color: var(--accent-color);
     cursor: pointer;
 }
+.typeofproduct-item :focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
 .typeofproduct-button {
     padding: 6px;
     padding-left: 25px;
