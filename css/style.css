@@ -101,6 +101,9 @@ section.hero {
 .header-description :hover {
     color: var(--accent-color);
 }
+.header-description :focus{
+    color: var(--accent-color);
+}
 .header-item {
     letter-spacing: 0.02em;;
 }
@@ -114,6 +117,9 @@ section.hero {
         font-weight: 500;
 }
 .header-contact :hover {
+    color: var(--accent-color);
+}
+.header-contact :focus {
     color: var(--accent-color);
 }
 .contact-link {
@@ -170,6 +176,9 @@ section.hero {
     padding-bottom: 0px;
 }
 .footer-item :hover {
+    color: var(--accent-color);
+}
+.footer-item :focus {
     color: var(--accent-color);
 }
 .adress-footer {
