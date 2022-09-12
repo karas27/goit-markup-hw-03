@@ -41,18 +41,21 @@ section.hero {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     display: flex;
+    align-items: center;
     justify-content: center;
 
 }
 .header{
     height: 80px;
+    display: flex;
 }
 .header-border {
     border-bottom: 1px solid #ECECEC;
     height: 80px;
+    display: flex;
 }
 
 .header-navigation {
@@ -64,9 +67,13 @@ section.hero {
 }
 .header-description {
     display: flex;
+    margin: 0px;
 }
 .header-description .header-item + .header-item {
     margin-left: 50px;
+}
+.header-description {
+    padding-left: 0px;
 }
 .header-contact {
     display: flex;
@@ -114,7 +121,8 @@ section.hero {
 }
 .header-contact {
     list-style-type: none;
-        font-weight: 500;
+    font-weight: 500;
+    padding-left: 0px;
 }
 .header-contact :hover {
     color: var(--accent-color);
@@ -130,7 +138,6 @@ section.hero {
 .footer {
     background-color: #2F303A;
     height: 252px;
-    width: 1600px;
 }
 .footer-wrap {
     width: 1200px;
@@ -190,15 +197,14 @@ section.hero {
     background-color: #2F303A;
     text-align: center;
     height: 600px;
-    width: 1600px;
     left: 0px;
     top: 80px;
 }
 .hero-titel {
     display: block;
-    width: 696px;
     text-align: center;
     margin-top: 0px;
+    margin-bottom: 0px;
     padding-top: 200px;
     padding-right: 452px;
     padding-bottom: 30px;
@@ -272,6 +278,7 @@ width: 216px;
 .whatwedo-description {
     display: flex;
     padding-left: 0px;
+    margin: 0px;
 }
 .whatwedo-list + .whatwedo-list {
     margin-left: 30px;
@@ -340,7 +347,10 @@ width: 216px;
 .typeofproduct-description {
     display: flex;
     justify-content: center;
+    margin-top: 0px;
     margin-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .typeofproduct-item {
     margin-right: 8px;
