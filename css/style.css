@@ -41,8 +41,20 @@ section.hero {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     display: flex;
+    justify-content: center;
+
 }
+.header{
+    height: 80px;
+}
+.header-border {
+    border-bottom: 1px solid #ECECEC;
+    height: 80px;
+}
+
 .header-navigation {
     display: flex;
     align-items: center;
@@ -123,7 +135,12 @@ section.hero {
     text-align: left;
 }
 .logo-footer {
+    display: block;
+    height: 31px;
+    width: 145px;
     padding-left: 0px;
+    padding-top: 60px;
+    padding-bottom: 0px;
 }
 .logo-footer-studio {
     color: var(--white-color);
@@ -131,10 +148,14 @@ section.hero {
 .footer-descraption {
     list-style-type: none;
     margin: 0px;
+    width: 231px;
+    height: 81px;
     padding-left: 0px;
 }
 .contact {
     padding-top: 20px;
+    display: block;
+    width: 231px;
 }
 
 .footer-link {
@@ -294,12 +315,36 @@ section.hero {
 }
 /*!!!!!!!!!!!!!!!!!!!!!!!!!! PORTFOLIO PAGE!!!!!!!!!!*/
 /*                                                TYPE OF PRODUCT SECTION*/
+.typeofproduct {
+    padding-bottom: 0px;
+}
+.typeofproduct-wrap {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.typeofproduct-description {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.typeofproduct-item {
+    margin-right: 8px;
+}
+.typeofproduct-description :last-child{
+    margin-right: 0px;
+}
 .typeofproduct-item :hover {
     color: var(--white-color);
     background-color: var(--accent-color);
     cursor: pointer;
 }
 .typeofproduct-button {
+    padding: 6px;
+    padding-left: 25px;
+    padding-right: 25px;
     font-family: Roboto;
     background: #F5F4FA;
     font-size: 16px;
@@ -310,14 +355,44 @@ section.hero {
     letter-spacing: 0.03em;
 }
 /*                                         EXAMPLES OF PRODUCT SECTION*/
+.exampleofproduct {
+    padding-top: 0px;
+}
+.exampleofproduct-wrap {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .exampleofproduct-descraption {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    margin: 0px;
+    gap: 30px;
     list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+.exampleofproduct-item {
+        border: 1px solid #EEEEEE;
+}
+.exampleofproduct-titel, .exampleofproduct-paragraph {
+    padding-left: 24px;
 }
 .exampleofproduct-titel{
+margin-bottom: 4px;
+line-height: 36px;
+width: 322px;
+display: block;
 font-size: 18px;
 font-weight: 700;
 letter-spacing: 0.06em;
 }
 .exampleofproduct-paragraph {
     font-size: 16px;
+    line-height: 30px;
+    display: block;
+    width: 322px;
+    height: 30px;
+    margin-top: 0px;
 }

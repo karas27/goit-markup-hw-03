@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title lang="en">Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,7 @@
         rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header-border">
         <div class="header-wrap">
         <nav class="header-navigation">
             <a lang="en" href="./portfolio.html"  rel="noopener noreferrer nofollow" class="logo-header"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
@@ -34,6 +35,7 @@
     <main>
         <!--Types of Product-->
        <section class="typeofproduct">
+        <div class="typeofproduct-wrap">
         <h1 hidden>Види прикладів робіт</h1>
         <ul class="typeofproduct-description">
             <li class="typeofproduct-item">
@@ -52,11 +54,12 @@
                 <button type="button" class="typeofproduct-button">Маркетинг</button>
             </li>
         </ul>
+        </div>
        </section>
 <!--Examples of Products-->
        <section class="exampleofproduct">
+        <div class="exampleofproduct-wrap">
         <ul class="exampleofproduct-descraption">
-            
             <li class="exampleofproduct-item">
                 <img src="./images/pe1.jpg" alt="" width="370" height="294" class="product-img">
                 <h2 class="exampleofproduct-titel">Технокряк</h3>
@@ -103,17 +106,24 @@
                 <p class="exampleofproduct-paragraph">Додаток</p>
             </li>
         </ul>
+        </div>
        </section>
        </main>
     <footer class="footer">
-        <a lang="en" href="./portfolio.html" rel="noopener noreferrer nofollow" class="logo-footer"><span class="logo-web">Web</span><span class="logo-footer-studio">Studio</span></a>
-        <address class="contact">
-            <ul class="footer-descraption">
-                <li class="footer-item"><a href="https://goo.gl/maps/RR3H3Hqk2sEJXV397" rel="noopener noreferrer nofollow"
-                        target="_blank" class="footer-link"><span class="adress-footer">м. Київ, пр-т Лесі Українки, 26</span></a></li>
-                <li class="footer-item"><a href="mailto:info@devstudio.com" class="footer-link">info@devstudio.com</a></li>
-                <li class="footer-item"><a href="tel:+38096111111" class="footer-link">+38 096 111 11 1</a></li>
-            </ul>
+        <div class="footer-wrap">
+            <a lang="en" class="logo-footer" href="./index.html" rel="noopener noreferrer nofollow"><span
+                    class="logo-web">Web</span><span class="logo-footer-studio">Studio</span></a>
+            <address class="contact">
+                <ul class="footer-descraption">
+                    <li class="footer-item"><a href="https://goo.gl/maps/RR3H3Hqk2sEJXV397"
+                            rel="noopener noreferrer nofollow" target="_blank" class="footer-link"><span
+                                class="adress-footer">м. Київ, пр-т Лесі Українки,
+                                26</span></a></li>
+                    <li class="footer-item"><a href="mailto:info@devstudio.com" class="footer-link">info@devstudio.com</a>
+                    </li>
+                    <li class="footer-item"><a href="tel:+38096111111" class="footer-link">+38 096 111 11 1</a></li>
+                </ul>
+        </div>
         </address>
     </footer>
 </body>
