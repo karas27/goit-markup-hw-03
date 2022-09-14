@@ -5,8 +5,14 @@
             --accent-color: #2196F3;
             --white-color: #FFFFFF;
             --background-color: #2F303A;
+            --card-set-gap: 30px;
 }
-
+html {
+    box-sizing: border-box;
+}
+*,*::before,*::after {
+    box-sizing: inherit;
+}
 body{
     color: var(--primary-text-color);
     background-color: var(--white-color);
@@ -150,6 +156,7 @@ a {
 .footer {
     background-color:var(--background-color);
     height: 252px;
+    padding-top: 60px;
 }
 .logo-footer {
     display: block;
@@ -253,9 +260,16 @@ a {
 .about-paragraph {
     margin: 0px;
 }
+
 .whatwedo-description {
     display: flex;
-
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
+}
+.whatwedo-list {
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+    margin-top: var(--card-set-gap);
+    margin-left: var(--card-set-gap);
 }
 .ourteam {
     background-color: #F5F4FA;;
@@ -264,18 +278,20 @@ a {
     display: flex;
     margin: 0px;
     padding-left: 0px;
+    margin-left: calc(-1 * var(--card-set-gap));
+        margin-top: calc(-1 * var(--card-set-gap));
 }
 .ourteam-wrap-item {
     width: 270px;
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+        margin-top: var(--card-set-gap);
+        margin-left: var(--card-set-gap);
     background-color: var(--white-color);
-    margin-right: 30px;
     text-align: center;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.ourteam-img {
-    display: block;
-}
+
 .ourteam-titel, .whatwedo-titel {
     font-weight: 700;
     font-size: 36px;
@@ -283,9 +299,6 @@ a {
     line-height: 1.16;
     text-align: center;
     margin-bottom: 50px;
-}
-.ourteam-wrap-item {
-    display: block;
 }
 .ourteam-name {
     font-weight: 500;
@@ -304,10 +317,7 @@ a {
 }
 /*!!!!!!!!!!!!!!!!!!!!!!!!!! PORTFOLIO PAGE!!!!!!!!!!*/
 /*                                                TYPE OF PRODUCT SECTION*/
-.typeofproduct-wrap.container {
-    padding-left: 0px;
-    padding-right: 0px;
-}
+
 .typeofproduct-description {
     display: flex;
     justify-content: center;
@@ -343,28 +353,24 @@ a {
     line-height: 1.59;
     letter-spacing: 0.03em;
 }
-.content-wrap {
-    border: 1px solid #EEEEEE;
-    padding-bottom: 20px;
-}
 .exampleofproduct-descraption {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0px;
-    margin: 0px;
-    gap: 30px;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
     list-style-type: none;
-    justify-content: center;
-    align-items: center;
+    box-sizing: border-box;
+    
 }
-.exampleofproduct-titel, .exampleofproduct-paragraph {
-    padding-left: 24px;
+.exampleofproduct-item {
+    flex-basis: calc( 100% / 3 - var(--card-set-gap));
+    margin-top: var(--card-set-gap);
+    margin-left: var(--card-set-gap);
+    border: 1px solid #EEEEEE;
 }
 .exampleofproduct-titel{
-margin-top: 20px;
 margin-bottom: 4px;
 line-height: 2.2;
-display: block;
 font-size: 18px;
 font-weight: 700;
 letter-spacing: 0.06em;
@@ -372,8 +378,10 @@ letter-spacing: 0.06em;
 .exampleofproduct-paragraph {
     font-size: 16px;
     line-height: 1.9 ;
-    display: block;
-    width: 322px;
-    height: 30px;
-    margin-top: 0px;
+}
+.card-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
