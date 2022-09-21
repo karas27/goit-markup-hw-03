@@ -42,7 +42,6 @@ img {
 }
 a {
     text-decoration: none;
-    padding: 5px;
 }
 .section {
     padding-top: 94px;
@@ -71,7 +70,7 @@ a {
     justify-content: center;
 
 }
-.header{
+.header {
     height: 80px;
     display: flex;
 }
@@ -169,9 +168,13 @@ a {
 .footer {
     background-color:var(--background-color);
     padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-wrap {
+    display: flex;
+    align-items: baseline;
 }
 .logo-footer {
-    display: block;
     padding-bottom: 0px;
 }
 .logo-footer-studio {
@@ -207,6 +210,16 @@ a {
 }
 .adress-footer {
     color: var(--white-color);
+}
+.invite-wraper {
+    margin-left: 70px;
+}
+.invite-titel {
+    color: var(--white-color);
+    font-style: normal;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 20px;
 }
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!STUDIO PAGE!!!!!!!!!!!!!!!!!!!!!*/
 /*                                      HERO SECTION                 */
@@ -331,33 +344,39 @@ a {
     line-height: 1.18;
     margin-bottom: 16px;
 }
-.social-desription {
+.social-description {
     display: flex;
     justify-content: center;
-    margin-right: 10px;
 }
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    fill: #AFB1B8;
+    border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: #2196F3;
+    fill: #FFFFFF;
+}
+
 .social-item {
     width: 44px;
     height: 44px;
 }
-.social-link {
-    padding: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    fill: #AFB1B8;
+
+.social-description li+li {
+    margin-left: 10px;
 }
 
-.social-link :hover{
-    fill: var(--white-color);
-    background-color: #2196F3;
-}
-
-.icon-item {
+.social-icon {
     width: 20px;
     height: 20px;
+    color: currentColor;
 }
 
 .about-titel, .whatwedo-titel, .typeofproduct-item,.exampleofproduct-titel, .ourteam-titel, .ourteam-name {
@@ -377,22 +396,21 @@ a {
     display: flex;
     justify-content: space-between;
 }
-.customers-icon {
+.customers-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
     fill: #AFB1B8;
-    padding-top: 25px;
-    padding-right: 64px;
-    padding-bottom: 25px;
-    padding-left: 64px;
-    border: 1px solid #AFB1B8;
     border-radius: 4px;
+    border: 1px solid #AFB1B8;
 }
-.customers-link :hover {
+.customers-link:hover,
+.customers-link:focus {
+    border: 1px solid #2196F3;
     fill: var(--accent-color);
-    border: 1px solid var(--accent-color);
 }
-
 
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!! PORTFOLIO PAGE!!!!!!!!!!*/
@@ -440,18 +458,21 @@ a {
     margin-top: calc(-1 * var(--card-set-gap));
     list-style-type: none;
     box-sizing: border-box;
-    
 }
-
+.shadow-wraper {
+    color: var(--primary-text-color);
+    display: block;
+}
+.shadow-wraper:hover,
+.shadow-wraper:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .exampleofproduct-item {
     flex-basis: calc( 100% / 3 - var(--card-set-gap));
     margin-top: var(--card-set-gap);
     margin-left: var(--card-set-gap);
 }
-.exampleofproduct-item :hover {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
+
 .exampleofproduct-titel{
 margin-bottom: 4px;
 line-height: 2.2;
@@ -462,6 +483,7 @@ letter-spacing: 0.06em;
 .exampleofproduct-paragraph {
     font-size: 16px;
     line-height: 1.9 ;
+    color: var(--primary-text-color);
 }
 .card-content {
     padding-left: 20px;
