@@ -33,6 +33,7 @@ p{
 ul {
     margin: 0px;
     padding: 0px;
+    list-style-type: none;
 }
 img {
     display: block;
@@ -104,6 +105,9 @@ a {
 .header-contact :not(:last-child) {
     margin-right: 50px;
 }
+.header-contact :first-child {
+    margin-right: 10px;
+}
 .logo-header, .logo-footer{
     font-size: 26px;
     font-weight: 700;
@@ -145,20 +149,22 @@ a {
 .header-contact {
     list-style-type: none;
     font-weight: 500;
-    padding-left: 0px;
-}
-.header-contact :hover {
-    color: var(--accent-color);
 }
 .header-contact :focus {
     color: var(--accent-color);
 }
 .contact-link {
     color: var(--primary-text-color);
-    font-weight: 500;
+    fill: var(--primary-text-color);
     padding-top: 32px;
-        padding-bottom: 32px;
+    padding-bottom: 32px;
 }
+.contact-link:hover,
+.contact-link:focus {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+}
+
 /*                                       FOOTER*/
 .footer {
     background-color:var(--background-color);
@@ -205,8 +211,9 @@ a {
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!STUDIO PAGE!!!!!!!!!!!!!!!!!!!!!*/
 /*                                      HERO SECTION                 */
 .hero{
-    background-color: var(--background-color);
     text-align: center;
+    background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47, 48, 58, 0.4)), url(/images/image\(hero\).jpg);
+    background-color: var(--background-color);
 }
 .hero-titel {
     text-align: center;
@@ -254,6 +261,15 @@ a {
 .about-desription :last-child {
     margin-left: auto;
 }
+.about-item.wrap {
+    width: 270px;
+    height: 120px;
+    padding-top: 25px;
+    padding-left: 100px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
 .about-list {
     width: 270px;
     margin: 0px;
@@ -292,6 +308,7 @@ a {
     text-align: center;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    padding-bottom: 30px;
 }
 
 .ourteam-titel, .whatwedo-titel {
@@ -312,11 +329,72 @@ a {
 .ourteam-paragraph {
     font-size: 16px;
     line-height: 1.18;
-   padding-bottom: 30px;
+    margin-bottom: 16px;
 }
+.social-desription {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+.social-item {
+    width: 44px;
+    height: 44px;
+}
+.social-link {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    fill: #AFB1B8;
+}
+
+.social-link :hover{
+    fill: var(--white-color);
+    background-color: #2196F3;
+}
+
+.icon-item {
+    width: 20px;
+    height: 20px;
+}
+
 .about-titel, .whatwedo-titel, .typeofproduct-item,.exampleofproduct-titel, .ourteam-titel, .ourteam-name {
     color: var(--title-text-color);
 }
+/* Regular-customers Section*/
+.customers.container {
+    text-align: center;
+}
+.customers-titel {
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--title-text-color);
+    margin-bottom: 50px;
+}
+.customers-description {
+    display: flex;
+    justify-content: space-between;
+}
+.customers-icon {
+    width: 170px;
+    height: 92px;
+    fill: #AFB1B8;
+    padding-top: 25px;
+    padding-right: 64px;
+    padding-bottom: 25px;
+    padding-left: 64px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.customers-link :hover {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+
+
 /*!!!!!!!!!!!!!!!!!!!!!!!!!! PORTFOLIO PAGE!!!!!!!!!!*/
 /*                                                TYPE OF PRODUCT SECTION*/
 
@@ -364,10 +442,15 @@ a {
     box-sizing: border-box;
     
 }
+
 .exampleofproduct-item {
     flex-basis: calc( 100% / 3 - var(--card-set-gap));
     margin-top: var(--card-set-gap);
     margin-left: var(--card-set-gap);
+}
+.exampleofproduct-item :hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .exampleofproduct-titel{
 margin-bottom: 4px;
